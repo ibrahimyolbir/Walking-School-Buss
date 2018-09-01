@@ -1,12 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="wsbApp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Vandrande SkolBus</title>
 </head>
 <body>
-    
+        <nav>
+                <li><a href="#!/">Login</a></li>
+                <li><a href="#!/home">Home</a></li>
+                <li><a href="#!/groupcreate">Group Create</a></li>
+            </nav>
+    <div ng-view></div>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.6.10/angular-route.js"></script>
+<script src="main.js"></script>
+<script src="app.js"></script>
+<script src="controllers.js"></script>
 </body>
 </html>
