@@ -1,4 +1,4 @@
-
+/* LOGIN */
 .input-field label{color:#999;}
 .input-field input[type=text]:focus + label,.input-field input[type=password]:focus + label{color:#000;}
 .input-field input[type=text]:focus ,.input-field input[type=password]:focus {border-bottom:1px solid ;box-shadow:0 1px 0 0 #000;}
@@ -22,3 +22,25 @@
 .policy{font-size:13px;}
 .main-title{font-family:pacifico;}
 .grey.lighten-5 {background-color: white !important;}
+/* LOGIN */
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+ 
+}
+ .flex-container > div {
+  border: 1px solid  #5FE5BC;
+  box-shadow: 0px 0px 4px 0px #0099FF;
+  border-radius: 10px;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  font-size: 14px; 
+  width: 156px;
+  height: 133px;
+  padding-top: 17px;
+}
+.flex-container>div>p {
+  margin-top: 10px;
+}
