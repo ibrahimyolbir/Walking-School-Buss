@@ -8,6 +8,10 @@ app.controller('HomeController', ['$scope','$http', function($scope,$http){
     console.log('HomeController');
 
 }]);
+app.controller('ChildrenSaveController', ['$scope','$http', function($scope,$http){
+    console.log('GroupCreateController');
+
+}]);
 app.controller('GroupCreateController', ['$scope','$http', function($scope,$http){
     console.log('GroupCreateController');
 

@@ -1,27 +1,254 @@
 /* LOGIN */
-.input-field label{color:#999;}
-.input-field input[type=text]:focus + label,.input-field input[type=password]:focus + label{color:#000;}
-.input-field input[type=text]:focus ,.input-field input[type=password]:focus {border-bottom:1px solid ;box-shadow:0 1px 0 0 #000;}
-.input-field input[type=text].valid,.input-field input[type=password].valid{border-bottom:1px solid #2196F3;box-shadow:0 1px 0 0 #2196F3;}
-.input-field input[type=text].invalid,.input-field input[type=password].invalid{border-bottom:1px solid #F44336;box-shadow:0 1px 0 0 #F44336;}
-.input-field .prefix.active{color:#000;}
-/* Input : switch */
-.switch{margin-top:7px;}
-.switch label .lever{margin:0 7px;}
-.switch label input[type="checkbox"]:checked + .lever{background-color:#ADD0EB;}
-.switch label input[type="checkbox"]:checked + .lever::after{background-color: #4FB0FD ;}
-.login-body{background-image:url(http://i.imgur.com/aBayW5C.png);background-size:cover;background-position: center;background-attachment:fixed;}
-.input-cart{min-height:400px;margin-top:80px;margin-bottom:100px;}
-.login{margin-top:25px;}
-.policy{visibility: hidden;}
-.signupForm{display: none;}
-.signup{margin-top:25px;}
-.signup-toggle{cursor:pointer;margin-top:140px;}
-.login h4, .signup h4{font-weight:200;}
-.email label{margin-left:11px;}
-.policy{font-size:13px;}
-.main-title{font-family:pacifico;}
-.grey.lighten-5 {background-color: white !important;}
+/**
+ * Created by Muhammed Erdem on 10.10.2017.
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700&subset=latin-ext');
+ * {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     margin: 0;
+ }
+ 
+ .wrapper {
+     width: 1%;
+     height: 100vh;
+     background: #fff;
+     display: table-cell;
+     vertical-align: middle;
+     font-family: 'Dosis', sans-serif;
+ }
+ 
+ .sign-panels {
+     width: 650px;
+     background: #fff;
+     padding: 15px 80px;
+     margin: 23px auto;
+     border-radius: 20px;
+     text-align: center;
+ }
+ .login,.signup {
+     position: relative;
+ }
+ 
+ 
+ .title {
+     color: #9f9f9f;
+     margin-bottom: 55px;
+ }
+ 
+ .title span {
+     display: block;
+     font-size: 46px;
+     font-weight: bold;
+ }
+ 
+ .title p {
+     font-size: 20px;
+     font-weight: 500;
+ }
+ 
+ .btn-face,.btn-twitter {
+     color: #fff;
+     display: inline-block;
+     width: 200px;
+     font-size: 20px;
+     height: 50px;
+     border-radius: 50px;
+     text-decoration: none;
+     padding: 11px 0;
+     font-weight: 500;
+ }
+ 
+ .btn-face .fa,.btn-twitter .fa {
+     margin-right: 5px;
+ }
+ 
+ .btn-face {
+     background: #5397d7;
+     margin-right: 25px;
+ }
+ 
+ .btn-twitter {
+     background: #40b9e0;
+ }
+ 
+ .or {
+     margin: 35px 0;
+     font-weight: 600;
+     color: #9f9f9f;
+ }
+ 
+ .or:after {
+     content: '';
+     display: block;
+     width: 100%;
+     height: 1px;
+     background: #cecece;
+     position: absolute;
+     margin-top: -10px;
+     z-index: 0;
+ }
+ 
+ .or span {
+     display: block;
+     background: #fff;
+     width: 50px;
+     margin: auto;
+     position: relative;
+     z-index: 2;
+ }
+ 
+ .sign-panels input {
+     width: 100%;
+     display: block;
+     margin-bottom: 15px;
+     height: 50px;
+     border-radius: 50px;
+     border: none;
+     background: #ededed;
+     text-align: center;
+     padding: 10px;
+     font-size: 15px;
+     color: #7c7c7c;
+     font-weight: 500;
+ }
+ 
+ .sign-panels input:focus {
+     outline:none;
+ }
+ 
+ .sign-panels input[type="checkbox"] {
+     display: none;
+ }
+ 
+ .sign-panels input[type="checkbox"] + label {
+     display: block;
+     width: 50%;
+     text-align: left;
+     padding-left: 60px;
+     cursor: pointer;
+     color: #828282;
+     font-weight: 500;
+     margin-top: 10px;
+     float: left;
+     height: 50px;
+     padding-top: 15px;
+ }
+ 
+ .sign-panels input[type="checkbox"] + label:before {
+     content: '';
+     display: block;
+     width: 15px;
+     height: 15px;
+     background: #dbdbdb;
+     position: absolute;
+     left: 30px;
+     border-radius: 50%;
+     border: 2px solid white;
+     box-shadow: 0 0 0 5px #ededed;
+     -webkit-transition: all .3s ease;
+     transition: all .3s ease;
+ }
+ .sign-panels input[type="checkbox"]:checked + label:before {
+     background: #FF5722;
+     box-shadow: 0 0 0 5px #FF5722;
+     -webkit-transition: all .3s ease;
+     transition: all .3s ease;
+ }
+ 
+ .btn-signin {
+     display: inline-block;
+     width: 50%;
+     margin-top: 10px;
+     height: 50px;
+     background: #ec581e;
+     border-radius: 50px;
+     padding: 11px;
+     font-size: 20px;
+     color: #fff;
+     text-decoration: none;
+     font-weight: 500;
+     border: none;
+     box-shadow: none;
+     cursor: pointer;
+ }
+ 
+ .btn-reset,.btn-member,.btn-fade {
+     font-size: 19px;
+     font-weight: 500;
+     color: #9f9f9f;
+     display: block;
+     /*width: 210px;*/
+     margin: 30px auto 0;
+     text-decoration: none;
+ 
+ }
+ .btn-member {
+     margin-top: 15px;
+ }
+ 
+ .btn-reset .fa,.btn-member .fa {
+     margin-left: 6px;
+ }
+ 
+ .notification p {
+     font-size: 20px;
+     font-weight: 600;
+     color: #9f9f9f;
+ }
+ 
+ .notification span {
+     color: #ec581e;
+ }
+ 
+ .error {
+     display: block;
+     color: #ec581e;
+     font-size: 20px;
+     font-weight: 600;
+     margin: 15px 0;
+ }
+ 
+ @media screen and (max-width: 768px) {
+     .sign-panels {
+         width: 90%;
+         padding: 15px;
+     }
+ }
+ 
+ @media screen and (max-width: 570px) {
+     .sign-panels {
+         padding: 15px 20px;
+     }
+ 
+     .btn-face, .btn-twitter {
+         width: 100%;
+     }
+     .btn-face {
+         margin-right: 0;
+         margin-bottom: 25px;
+     }
+ }
+ 
+ @media screen and (max-width: 480px) {
+     .sign-panels input[type="checkbox"] + label {
+         width: 100%;
+     }
+ 
+     .btn-signin {
+         width: 80%;
+     }
+ 
+     .title span {
+         font-size: 36px;
+     }
+ 
+ }
 /* LOGIN */
 
 .flex-container {
@@ -36,11 +263,68 @@
   width: 100px;
   margin: 10px;
   text-align: center;
-  font-size: 14px; 
+  font-size: 16px; 
   width: 156px;
   height: 133px;
   padding-top: 17px;
+  cursor: pointer;
 }
-.flex-container>div>p {
+.flex-container>div>a>p {
   margin-top: 10px;
 }
+.flex-container>div>a {
+  text-decoration: none;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  color: black;
+}
+
+.header-menu {
+  font-size:30px;
+  height: 60px;
+  cursor:pointer;
+  background-color: #19769F;
+  background-image: linear-gradient(to right, #19769F, #5FE5BC);
+}
+.nav-button>p{
+  margin-left: 18px;
+  color: white;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient( #19769F, #5FE5BC);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  overflow: auto;
+  opacity: 0.95333;
+}
+
+.sidenav a {
+  padding: 25px 8px 18px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  border-top: 1px solid;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
