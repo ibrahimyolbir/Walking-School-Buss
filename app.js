@@ -13,6 +13,10 @@ app.config(function($routeProvider, $locationProvider){
         templateUrl: 'templates/childrensave.html',
         controller: 'ChildrenSaveController'
     }) 
+    .when('/addchildren', {
+        templateUrl: 'templates/addchildren.html',
+        controller: 'AddChildrenController'
+    }) 
     .when('/groupcreate', {
         templateUrl: 'templates/groupcreate.html',
         controller: 'GroupCreateController'

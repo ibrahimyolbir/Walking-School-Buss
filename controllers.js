@@ -9,7 +9,11 @@ app.controller('HomeController', ['$scope','$http', function($scope,$http){
 
 }]);
 app.controller('ChildrenSaveController', ['$scope','$http', function($scope,$http){
-    console.log('GroupCreateController');
+    console.log('ChildrenSaveController');
+
+}]);
+app.controller('AddChildrenController', ['$scope','$http', function($scope,$http){
+    console.log('AddChildrenController');
 
 }]);
 app.controller('GroupCreateController', ['$scope','$http', function($scope,$http){
