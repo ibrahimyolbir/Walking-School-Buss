@@ -300,26 +300,29 @@
  
 }
 .nav-button>.add-button-circle {
-  height: 25px;
-  width: 25px;
-  background-image: radial-gradient(farthest-corner at 60% 85%, #19769F, #5FE5BC);
-  border-radius: 50%;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: 14px;
-  margin-top: 14px;
-  box-shadow: 0px 0px 4px 0px #0099FF;
-  cursor: pointer;
-   
+    height: 25px;
+    width: 25px;
+    background-image: radial-gradient(farthest-corner at 97% 137%, #bf9dc7, #d68da3);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 14px;
+    margin-top: 14px;
+    box-shadow: -3px 0px 20px 1px #ffffff;
+    cursor: pointer;
+}
+.nav-button>.add-button-circle:hover{
+    background-color: #40b9e0;
 }
 .nav-button>.add-button-circle>a{
     text-decoration: none;
     position: absolute;
     right: 18px;
-    top: 4px;
+    top: 11px;
     font-family: -webkit-pictograph;
-    color:white;
+    color: white;
 }
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -362,11 +365,13 @@
 
 
 .child-save-form {
-    width: 90%;
-    margin-left: 10px;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .child-save-image {
-    margin: 100px;
+    margin-bottom: 100px;
 }
 
 .child-save-image>img{
@@ -375,6 +380,15 @@
 }
 .child-save-grade-level{
     display: unset;
+}
+.add-children-form{
+    width: 93%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.child-save-button{
+    text-align: center;
+    margin-top: 84px;
 }
 
 .group-create-button>a,.group-find-button>a {
