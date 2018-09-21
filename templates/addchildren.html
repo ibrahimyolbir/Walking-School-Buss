@@ -20,7 +20,7 @@
         </div>
         <form action="" class="add-children-form">
                 <h6>Childs Name</h6>
-                <input type="text" name="" id="" placeholder="Name">
+                <input ng-model="addMe"type="text" name="" id="" placeholder="Name">
                 <h6>Grade Level</h6>
                 <select name="Grade Level" class="child-save-grade-level">
                         <option value="">Förskola</option>
@@ -28,7 +28,7 @@
                         <option value="">Gymnasiet</option>
                 </select>
                 <div class="child-save-button">
-                        <button type="submit">Save</button>
+                        <button ng-click="addItem()" >Save</button>
                 </div>
                 
         </form>

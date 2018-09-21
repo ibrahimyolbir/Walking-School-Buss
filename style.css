@@ -255,8 +255,8 @@
  
 }
  .flex-container > div {
-    border: 1px solid #CDDC39;
-    box-shadow: 0px 0px 5px 3px #8BC34A;
+    border: 1px solid #c29cc3;
+    box-shadow: 0px 0px 5px 3px #d78fa5;
   border-radius: 10px;
   width: 100px;
   margin: 10px;
@@ -312,7 +312,7 @@
     cursor: pointer;
 }
 .nav-button>.add-button-circle:hover{
-    background-color: #40b9e0;
+    opacity: 0.7;
 }
 .nav-button>.add-button-circle>a{
     text-decoration: none;
@@ -390,7 +390,18 @@
     text-align: center;
     margin-top: 84px;
 }
-
+.child-save-button>button{
+    width: 50vh;
+    height: 56px;
+    background-image: linear-gradient(to right, #F08080,#BE9EC9);
+    border-radius: 37px;
+    color: white;
+    box-shadow: 0px 0px 5px 3px #d78fa5;
+}
+.child-save-button>button:hover{
+    opacity: 0.7;
+    
+}
 .group-create-button>a,.group-find-button>a {
     display: flex;
     margin-top: 22px;

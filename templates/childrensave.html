@@ -5,16 +5,24 @@
         <a href="#">STATISTICS</a>
         <a href="#">INSTALLNINGAR</a>
         <a href="#">LOG OUT</a>
-      </div>
-       
+</div>
+
 
 <div class="header-menu" style="display: flex;">
-        <div class="nav-button" >
-                <p  onclick="openNav()">&#9776; </p>
-                <div class="add-button-circle"><a href="#!/addchildren">+</a></div>
+        <div class="nav-button">
+                <p onclick="openNav()">&#9776; </p>
+                <div class="add-button-circle">
+                        <a href="#!/addchildren">+</a>
+                </div>
+        </div>
+</div>
 
-            </div>
-
-  </div>
-
- <h1>CHILDREN</h1>
+<div ng-repeat="item in display" class="children-items">
+        <div class="children-images">
+                <img ng-src="{{lawnmower.logoLocation}}">
+        </div>
+        <div class="children-text">
+                <p>{{item.firstName}}</p>
+                <p>{{item.lastName}}</p>
+        </div>
+</div>
