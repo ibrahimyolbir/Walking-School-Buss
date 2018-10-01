@@ -268,7 +268,7 @@
   cursor: pointer; 
 }
 .flex-container > div:hover {
-    background-color: #b8e2e4;
+    background-color: #efc5c7;
     color: white;
 }
 

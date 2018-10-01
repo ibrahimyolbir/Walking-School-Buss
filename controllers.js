@@ -2,7 +2,7 @@ var app = angular.module('wsbApp');
 
 app.controller('LoginController', ['$scope', '$http', function ($scope, $http) {
 
-    jQuery(document).ready(function ($) {
+    $(document).ready(function ($) {
         $('.signup').hide();
         $('.recover-password').hide();
 
@@ -47,7 +47,7 @@ app.controller('LoginController', ['$scope', '$http', function ($scope, $http) {
 }]);
 app.controller('HomeController', ['$scope', '$http', function ($scope, $http) {
     console.log('HomeController');
-
+ 
 }]);
  
 
@@ -66,7 +66,7 @@ app.controller('HomeController', ['$scope', '$http', function ($scope, $http) {
  
 app.controller('ChildrenSaveController', ['$scope', '$http','getChild',  function ($scope, $http,getChild) {
     getChild.resultSet().then(function(data){
-        $scope.display = data;
+        $scope.users= data;
         console.log($scope.display);
     });
 }]);
